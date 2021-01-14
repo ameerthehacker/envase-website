@@ -1,0 +1,11 @@
+.navLinks > a + a {
+  margin-left: 15px;
+}
+
+.navLink {
+  font-weight: 450;
+}
+
+.navLink:hover {
+  border-bottom: 2px solid red;
+}
