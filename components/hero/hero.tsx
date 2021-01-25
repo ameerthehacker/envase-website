@@ -77,7 +77,7 @@ export default function Hero({
           fallbackSrc={PlaceHolderImage}
           marginTop={3}
           boxShadow="lg"
-          height="350px"
+          width="600px"
           src={demo}
         />
       </Stack>
