@@ -21,7 +21,9 @@ export default function Index({
           title: "Envase",
           description: "Envase removes the pain of running apps using docker by providing an amazing developer experience and an one stop shop app store for almost all popular applications.",
           images: [{
-            url: `${origin}/logo.png`
+            url: `${origin}/logo.png`,
+            height: 256,
+            width: 256
           }]
         }}
       />
@@ -33,9 +35,10 @@ export default function Index({
   );
 }
 
-Index.getIntitialProps = async ({ req }: any) => {
+Index.getInitialProps = async ({ req }: any) => {
+  const { origin } = absoluteUrl(req);
+
   try {
-    const { origin } = absoluteUrl(req);
     const latestTag = await (
       await fetch(`https://api.github.com/repos/${GITHUB_REPO}/releases/latest`)
     ).json();
