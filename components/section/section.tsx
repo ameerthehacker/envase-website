@@ -5,7 +5,7 @@ type SectionProps = { children: ReactNode; bg: string; id?: string, padding?: nu
 
 export default function Section({ children, bg, id, padding = 6 }: SectionProps) {
   return (
-    <Flex id={id} bg={bg} padding={padding} justifyContent="center">
+    <Flex id={id} paddingLeft={padding} paddingRight={6} justifyContent="center">
       <Box maxWidth="1100px" width="100%">
         {children}
       </Box>

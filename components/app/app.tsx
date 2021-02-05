@@ -1,6 +1,4 @@
 import { Box } from '@chakra-ui/core';
-import Features from '../features/features';
-import Footer from '../footer/footer';
 import Hero from '../hero/hero';
 import Navbar from '../navbar/navbar';
 import WhyEnvase from '../why-envase/why-envase';
@@ -12,13 +10,8 @@ export default function App({
 }) {
   return (
     <Box>
-      <Navbar />
-      <Box marginTop="60px">
-        <Hero latestReleaseTag={latestReleaseTag} />
-        <WhyEnvase />
-        <Features />
-        <Footer />
-      </Box>
+      <Hero latestReleaseTag={latestReleaseTag} />
+      <WhyEnvase />
     </Box>
   );
 }
