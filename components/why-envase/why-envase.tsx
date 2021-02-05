@@ -1,8 +1,12 @@
 import { Box, Button, Flex, Stack, Text } from '@chakra-ui/core';
 import Section from '../section/section';
-import RocketSVG from './rocket.svg';
-import CodeSVG from './code.svg';
+import Rocket from './rocket.svg';
+import Code from './code.svg';
 import Containers from './containers.svg';
+
+const RocketSVG = Rocket as any;
+const CodeSVG = Code as any;
+const ContainersSVG = Containers as any;
 
 export default function WhyEnvase() {
   return (
@@ -36,7 +40,7 @@ export default function WhyEnvase() {
           </Stack>
           <Stack marginTop={10} direction="row" spacing={5}>
             <Box>
-              <Containers height="70px" />
+              <ContainersSVG height="70px" />
             </Box>
             <Box>
               <Text fontSize="1xl">
