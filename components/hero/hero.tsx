@@ -12,7 +12,7 @@ function getPlatformBinary(platform: string, tag: string) {
   } else if (platform.startsWith('linux')) {
     return `envase-${version}.AppImage`;
   } else if (platform.startsWith('win')) {
-    return `envase-${version}.exe`;
+    return `envase-Setup-${version}.exe`;
   }
 }
 
