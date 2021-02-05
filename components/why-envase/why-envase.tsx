@@ -10,7 +10,7 @@ const ContainersSVG = Containers as any;
 
 export default function WhyEnvase() {
   return (
-    <Section bg="#fff">
+    <Section>
       <Flex id="why-envase" flexWrap="wrap" flexDirection="row" alignItems="center" height="100vh" justifyContent="space-between">
         <Box>
           <Text fontSize="5xl">What do you get?</Text>

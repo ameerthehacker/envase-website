@@ -44,7 +44,7 @@ export default function Hero({
   }, []);
 
   return (
-    <Section bg="#EBF4FF">
+    <Section>
       <Flex alignItems="center" justifyContent="center" height="100vh">
         <Box textAlign="center">
           <Text fontWeight="600" fontSize={['2xl', '6xl']}>Homebrew for docker 🎉</Text>
