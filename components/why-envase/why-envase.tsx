@@ -25,7 +25,7 @@ export default function WhyEnvase() {
         id="why-envase"
         flexWrap="wrap"
         flexDirection={[
-          "column",
+          "row",
           "column",
           "column",
           "row"
@@ -34,14 +34,14 @@ export default function WhyEnvase() {
         height="100vh"
         justifyContent={
           [
-            "flex-start",
-            "flex-start",
-            "flex-start",
+            "center",
+            "center",
+            "center",
             "space-between"
           ]
         }>
         <Box>
-          <Text fontSize="5xl">What do you get?</Text>
+          <Text fontSize={["4xl", "5xl"]}>What do you get?</Text>
         </Box>
         <Flex marginTop={[8, 8, 8, 0]} maxWidth="500px" justifyContent="center" flexDirection="column">
           <Stack direction="row" spacing={5}>

@@ -47,7 +47,7 @@ export default function Hero({
     <Section>
       <Flex alignItems="center" justifyContent="center" height="100vh">
         <Box textAlign="center">
-          <Text fontWeight="600" fontSize={['2xl', '6xl']}>Homebrew for docker 🎉</Text>
+          <Text fontWeight="600" fontSize={['4xl', '6xl']}>Homebrew for docker 🎉</Text>
           <Text fontSize={['xl', '2xl']} fontWeight="250">
             <strong>Envase</strong> removes the pain of running apps using{' '}
             <strong>docker</strong> by providing an amazing{' '}
