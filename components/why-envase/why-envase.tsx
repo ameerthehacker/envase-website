@@ -21,11 +21,29 @@ const demos = {
 export default function WhyEnvase() {
   return (
     <Section>
-      <Flex id="why-envase" flexWrap="wrap" flexDirection="row" alignItems="center" height="100vh" justifyContent="space-between">
+      <Flex 
+        id="why-envase"
+        flexWrap="wrap"
+        flexDirection={[
+          "column",
+          "column",
+          "column",
+          "row"
+        ]}
+        alignItems="center"
+        height="100vh"
+        justifyContent={
+          [
+            "flex-start",
+            "flex-start",
+            "flex-start",
+            "space-between"
+          ]
+        }>
         <Box>
           <Text fontSize="5xl">What do you get?</Text>
         </Box>
-        <Flex maxWidth="500px" justifyContent="center" flexDirection="column">
+        <Flex marginTop={[8, 8, 8, 0]} maxWidth="500px" justifyContent="center" flexDirection="column">
           <Stack direction="row" spacing={5}>
             <Box>
               <RocketSVG height="70px" />
