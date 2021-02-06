@@ -7,6 +7,10 @@ body {
   color: #fff;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 strong {
   font-weight: bolder !important;
   font-style: italic;

@@ -106,7 +106,7 @@ export default function Hero({
               onClick={() => {
                 window.open(downloadLink);
               }}
-              marginTop={5}
+              marginTop={[5, 5, 8, 8]}
               size="lg"
               variantColor="purple"
               variant="solid"
@@ -120,7 +120,7 @@ export default function Hero({
             <a href="#why-envase">
               <Button
                 leftIcon={FaArrowDown}
-                marginTop={5}
+                marginTop={[5, 5, 8, 8]}
                 size="lg"
                 variantColor="orange"
                 variant="solid"
