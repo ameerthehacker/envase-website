@@ -9,3 +9,14 @@
   75% { color: #8e44ad }
   100% { color: #8d63e7; }
 }
+
+.slides {
+  animation: sliding 4s normal forwards ease;
+  animation-delay: 0.5s;
+}
+
+@keyframes sliding {
+  100% {
+    transform: translateX(-330px);
+  }
+}

@@ -5,8 +5,20 @@ import { useEffect, useState } from 'react';
 import Section from '../section/section';
 import styles from './hero.module.css';
 import Logo from './containers.svg';
+import Go from './gopher.svg';
+import Postgres from './postgres.svg';
+import ES from './es.svg';
+import Redis from './redis.svg';
+import MySQL from './mysql.svg';
+import Hasura from './hasura.svg';
 
 const LogoSVG = Logo as any;
+const GoSVG = Go as any;
+const PostgresSVG = Postgres as any;
+const ESSVG = ES as any;
+const RedisSVG = Redis as any;
+const MySQLSVG = MySQL as any;
+const HasuraSVG = Hasura as any;
 
 function getPlatformBinary(platform: string, tag: string) {
   const version = tag.substring(1);
@@ -64,7 +76,7 @@ export default function Hero({
                   <Box>
                     <FaGithub size="1.4em" />
                   </Box>
-                  <Text fontSize="xl" fontWeight="300">View Source</Text>
+                  <Text display={["none", "none", "inline", "inline"]} fontSize="xl" fontWeight="300">View Source</Text>
                 </Stack>
               </a>
             </Box>
@@ -74,13 +86,13 @@ export default function Hero({
                   <Box>
                     <FaTwitter color="#20A1F1" size="1.4em" />
                   </Box>
-                  <Text fontSize="xl" fontWeight="300">Follow US</Text>
+                  <Text display={["none", "none", "inline", "inline"]} fontSize="xl" fontWeight="300">Follow US</Text>
                 </Stack>
               </a>
             </Box>
           </Stack>
         </Flex>
-        <Flex height="calc(100vh - 75px)" alignItems="center" justifyContent="center">
+        <Flex height="calc(100vh - 75px)" alignItems="center" flexDirection="column" justifyContent="center">
           <Box textAlign="center">
             <Text className={styles.title} fontWeight="600" fontSize={['4xl', '6xl']}>Homebrew for docker 🎉</Text>
             <Text fontSize={['xl', '2xl']} fontWeight="250">
@@ -121,6 +133,28 @@ export default function Hero({
                 Read More
               </Button>
             </a>
+          </Box>
+          <Box overflow="hidden" width="330px">
+            <Stack className={styles.slides} direction="row" alignItems="center" spacing={5} marginTop="50px">
+              <Box height="100px">
+                <GoSVG height="100px" width="71px" preserveAspectRatio="none" />
+              </Box>
+              <Box>
+                <PostgresSVG height="100px" width="100px" preserveAspectRatio="none"  />
+              </Box>
+              <Box>
+                <ESSVG height="100px" width="100px" preserveAspectRatio="none"  />
+              </Box>
+              <Box>
+                <RedisSVG height="100px" width="100px" preserveAspectRatio="none"  />
+              </Box>
+              <Box>
+                <MySQLSVG height="68px" width="100px" preserveAspectRatio="none"  />
+              </Box>
+              <Box>
+                <HasuraSVG height="100px" width="68px" preserveAspectRatio="none"  />
+              </Box>
+            </Stack>
           </Box>
         </Flex>
       </Box>
