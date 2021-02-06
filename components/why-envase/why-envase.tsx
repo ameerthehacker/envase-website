@@ -85,7 +85,7 @@ export default function WhyEnvase() {
               <Text fontSize="1xl">
                 We are <strong>Open Source</strong>, show your love by <FaStar style={{ display: 'inline', color: 'yellow' }} /> the repo. We are also open for contributions <FaHeart style={{ display: 'inline', color: 'red' }} />
               </Text>
-              <a href={`https://github.com/${GITHUB_REPO}`} target="blank">
+              <a href={`https://github.com/${GITHUB_REPO}`} target="blank" tabIndex={-1}>
                 <Button size="sm" variant="link" marginTop={2}>View Source</Button>
               </a>
             </Box>

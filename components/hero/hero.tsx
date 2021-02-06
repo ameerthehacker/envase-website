@@ -113,28 +113,28 @@ export default function Hero({
               borderRadius="75px"
               color="white"
               px={20}
-              py={8}
+              py={[3, 3, 8, 8]}
             >
               Download
             </Button>
-            <a href="#why-envase">
+            <a tabIndex={-1} href="#why-envase">
               <Button
                 leftIcon={FaArrowDown}
-                marginTop={[5, 5, 8, 8]}
+                marginTop={[3, 3, 8, 8]}
                 size="lg"
                 variantColor="orange"
                 variant="solid"
                 borderRadius="75px"
                 color="white"
                 px={20}
-                py={8}
+                py={[3, 3, 8, 8]}
                 ml={3}
               >
                 Read More
               </Button>
             </a>
           </Box>
-          <Flex flexWrap="wrap" alignItems="center" justifyContent="center" marginTop="50px">
+          <Flex display={["none", "none", "flex", "flex"]} flexWrap="wrap" alignItems="center" justifyContent="center" marginTop="50px">
             <Box overflow="hidden" width="330px">
               <Stack className={styles.slides} direction="row" alignItems="center" spacing={5}>
                 <Box height="100px">
@@ -158,8 +158,9 @@ export default function Hero({
               </Stack>
             </Box>
             <Box marginLeft={3}>
-              <a target="blank" href={`https://github.com/${GITHUB_REPO}/tree/master/src/formulas`}>
+              <a tabIndex={-1} target="blank" href={`https://github.com/${GITHUB_REPO}/tree/master/src/formulas`}>
                 <Button
+                  mt={[5, 5, 0, 0]}
                   rightIcon={FaArrowRight}
                   variant="link">
                   View all
