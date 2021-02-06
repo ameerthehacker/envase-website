@@ -84,10 +84,10 @@ export default function Hero({
           <Box textAlign="center">
             <Text className={styles.title} fontWeight="600" fontSize={['4xl', '6xl']}>Homebrew for docker 🎉</Text>
             <Text fontSize={['xl', '2xl']} fontWeight="250">
-              <strong>Envase</strong> removes the pain of running apps using{' '}
+              Envase removes the pain of running apps using{' '}
               <strong>docker</strong> by providing an amazing{' '}
               <strong>developer experience</strong> and an one stop shop app store
-              for almost all popular applications. Stop breaking your heads with docker commands and start envasing.
+              for almost all popular applications. Stop breaking your heads with docker commands and start <strong>envasing</strong>.
             </Text>
             <Button
               leftIcon={getPlatformIcon(platform)}

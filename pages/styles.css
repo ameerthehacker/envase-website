@@ -6,3 +6,9 @@ body {
   background: #09101E;
   color: #fff;
 }
+
+strong {
+  font-weight: bolder !important;
+  font-style: italic;
+  color: #1abc9c;
+}
