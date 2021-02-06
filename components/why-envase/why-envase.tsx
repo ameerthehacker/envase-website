@@ -72,7 +72,7 @@ export default function WhyEnvase() {
             </Box>
             <Box>
               <Text fontSize="1xl">
-                Run fullstack apps like <strong>Hasura, Wordpress, Drupal</strong> with ease and confidence. Envase creates and connects multiple containers over a common network without you ever having to think about it.
+                Run fullstack apps like <strong>Hasura, Wordpress, Joomla</strong> with ease and confidence. Envase creates and connects multiple containers over a common network without you ever having to think about it.
               </Text>
               <Button onClick={() => window.open(demos.fullstack)} size="sm" variant="link" marginTop={2}>View Demo</Button>
             </Box>
