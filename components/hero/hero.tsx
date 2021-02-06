@@ -1,6 +1,6 @@
 import { Box, Button, Flex, Stack, Text } from '@chakra-ui/core';
 import { GITHUB_REPO } from '../../constants';
-import { FaApple, FaWindows, FaLinux, FaArrowDown, FaTwitter, FaGithub } from 'react-icons/fa';
+import { FaApple, FaWindows, FaLinux, FaArrowDown, FaTwitter, FaGithub, FaArrowRight } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 import Section from '../section/section';
 import styles from './hero.module.css';
@@ -134,28 +134,38 @@ export default function Hero({
               </Button>
             </a>
           </Box>
-          <Box overflow="hidden" width="330px">
-            <Stack className={styles.slides} direction="row" alignItems="center" spacing={5} marginTop="50px">
-              <Box height="100px">
-                <GoSVG height="100px" width="71px" preserveAspectRatio="none" />
-              </Box>
-              <Box>
-                <PostgresSVG height="100px" width="100px" preserveAspectRatio="none"  />
-              </Box>
-              <Box>
-                <ESSVG height="100px" width="100px" preserveAspectRatio="none"  />
-              </Box>
-              <Box>
-                <RedisSVG height="100px" width="100px" preserveAspectRatio="none"  />
-              </Box>
-              <Box>
-                <MySQLSVG height="68px" width="100px" preserveAspectRatio="none"  />
-              </Box>
-              <Box>
-                <HasuraSVG height="100px" width="68px" preserveAspectRatio="none"  />
-              </Box>
-            </Stack>
-          </Box>
+          <Flex flexWrap="wrap" alignItems="center" justifyContent="center" marginTop="50px">
+            <Box overflow="hidden" width="330px">
+              <Stack className={styles.slides} direction="row" alignItems="center" spacing={5}>
+                <Box height="100px">
+                  <GoSVG height="100px" width="71px" preserveAspectRatio="none" />
+                </Box>
+                <Box>
+                  <PostgresSVG height="100px" width="100px" preserveAspectRatio="none"  />
+                </Box>
+                <Box>
+                  <ESSVG height="100px" width="100px" preserveAspectRatio="none"  />
+                </Box>
+                <Box>
+                  <RedisSVG height="100px" width="100px" preserveAspectRatio="none"  />
+                </Box>
+                <Box>
+                  <MySQLSVG height="68px" width="100px" preserveAspectRatio="none"  />
+                </Box>
+                <Box>
+                  <HasuraSVG height="100px" width="68px" preserveAspectRatio="none"  />
+                </Box>
+              </Stack>
+            </Box>
+            <Box marginLeft={3}>
+              <Button
+                onClick={() => window.open(`https://github.com/${GITHUB_REPO}/tree/master/src/formulas`)}
+                rightIcon={FaArrowRight}
+                variant="link">
+                View all
+              </Button>
+            </Box>
+          </Flex>
         </Flex>
       </Box>
     </Section>
