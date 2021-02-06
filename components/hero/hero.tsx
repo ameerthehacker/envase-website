@@ -158,12 +158,13 @@ export default function Hero({
               </Stack>
             </Box>
             <Box marginLeft={3}>
-              <Button
-                onClick={() => window.open(`https://github.com/${GITHUB_REPO}/tree/master/src/formulas`)}
-                rightIcon={FaArrowRight}
-                variant="link">
-                View all
-              </Button>
+              <a target="blank" href={`https://github.com/${GITHUB_REPO}/tree/master/src/formulas`}>
+                <Button
+                  rightIcon={FaArrowRight}
+                  variant="link">
+                  View all
+                </Button>
+              </a>
             </Box>
           </Flex>
         </Flex>
