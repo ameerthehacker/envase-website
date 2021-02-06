@@ -16,6 +16,12 @@ export default function Index({
     <>
       <NextSeo
         title="Envase"
+        additionalMetaTags={[
+          {
+            name: "theme-color",
+            content: "#09101E"
+          }
+        ]}
         description={`Envase removes the pain of running apps using docker by providing an amazing developer experience and an one stop shop app store for almost all popular applications.`}
         openGraph={{
           title: "Envase",
