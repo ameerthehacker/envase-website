@@ -61,7 +61,7 @@ export default function WhyEnvase() {
             </Box>
             <Box>
               <Text fontSize="1xl">
-                Fancy learning a new language like <strong>GoLang, Python or Rust</strong> but lazy to install all the required toolchain? we have got you covered with one click language tooling setup.
+                Fancy learning a new language like <strong>GoLang, Python or Rust</strong> you can save yourself from the trouble of setting up the toolchain in seconds using Envase.
               </Text>
               <Button onClick={() => window.open(demos.node)} size="sm" variant="link" marginTop={2}>View Demo</Button>
             </Box>
