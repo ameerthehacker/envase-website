@@ -94,7 +94,7 @@ export default function Hero({
         </Flex>
         <Flex height="calc(100vh - 75px)" alignItems="center" flexDirection="column" justifyContent="center">
           <Box textAlign="center">
-            <Text className={styles.title} fontWeight="600" fontSize={['4xl', '6xl']}>App Store for docker 🎉</Text>
+            <Text className={styles.title} fontWeight="600" fontSize={['4xl', '6xl']}>App Store for Docker 🎉</Text>
             <Text fontSize={['xl', '2xl']} fontWeight="250">
               Envase removes the pain of running apps using{' '}
               <strong>Docker</strong> by providing an amazing{' '}
