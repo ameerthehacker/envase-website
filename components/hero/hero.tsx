@@ -1,6 +1,6 @@
 import { Box, Button, Flex, Stack, Text } from '@chakra-ui/core';
 import { GITHUB_REPO } from '../../constants';
-import { FaApple, FaWindows, FaLinux, FaArrowDown, FaTwitter, FaGithub, FaArrowRight } from 'react-icons/fa';
+import { FaApple, FaWindows, FaLinux, FaArrowDown, FaTwitter, FaGithub, FaArrowRight, FaDiscord, FaBookOpen } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 import Section from '../section/section';
 import styles from './hero.module.css';
@@ -70,6 +70,26 @@ export default function Hero({
             <Text fontSize="3xl" fontWeight="300">Envase</Text>
           </Stack>
           <Stack direction="row" alignItems="center" spacing={5}>
+            <Box>
+              <a href="https://docs.getenvase.com" target="blank">
+                <Stack paddingTop="30px" spacing={2} direction="row" alignItems="center"> 
+                  <Box>
+                    <FaBookOpen size="1.4em" />
+                  </Box>
+                  <Text display={["none", "none", "inline", "inline"]} fontSize="xl" fontWeight="300">Docs</Text>
+                </Stack>
+              </a>
+            </Box>
+            <Box>
+              <a href="https://discord.gg/ayt2KDVytk" target="blank">
+                <Stack paddingTop="30px" spacing={2} direction="row" alignItems="center"> 
+                  <Box>
+                    <FaDiscord color="#6E86D3" size="1.4em" />
+                  </Box>
+                  <Text display={["none", "none", "inline", "inline"]} fontSize="xl" fontWeight="300">Join Discord</Text>
+                </Stack>
+              </a>
+            </Box>
             <Box>
               <a href={`https://github.com/${GITHUB_REPO}`} target="blank">
                 <Stack paddingTop="30px" spacing={2} direction="row" alignItems="center"> 

@@ -13,9 +13,9 @@ const GHSVG = GH as any;
 const CodeSVG = Code as any;
 
 const demos = {
-  mysql: 'https://vimeo.com/500412505',
-  node: 'https://vimeo.com/500468189',
-  fullstack: 'https://vimeo.com/500477155'
+  mysql: 'https://docs.getenvase.com/docs/create-database-app',
+  node: 'https://docs.getenvase.com/docs/create-language-app',
+  fullstack: 'https://docs.getenvase.com/docs/create-fullstack-app'
 }
 
 export default function WhyEnvase() {
@@ -52,7 +52,7 @@ export default function WhyEnvase() {
               <Text fontSize="1xl">
                 Launch databases like <strong>MySQL, PostgreSQL, MongoDB</strong> and apps like <strong>VSCode, PhpMyAdmin, PgAdmin</strong> in just few seconds.
               </Text>
-              <Button onClick={() => window.open(demos.mysql)} size="sm" variant="link" marginTop={2}>View Demo</Button>
+              <Button onClick={() => window.open(demos.mysql)} size="sm" variant="link" marginTop={2}>Read More</Button>
             </Box>
           </Stack>
           <Stack marginTop={10} direction="row" spacing={5}>
@@ -63,7 +63,7 @@ export default function WhyEnvase() {
               <Text fontSize="1xl">
                 Fancy learning a new language like <strong>GoLang, Python or Rust</strong> you can save yourself from the trouble of setting up the toolchain in seconds using Envase.
               </Text>
-              <Button onClick={() => window.open(demos.node)} size="sm" variant="link" marginTop={2}>View Demo</Button>
+              <Button onClick={() => window.open(demos.node)} size="sm" variant="link" marginTop={2}>Read More</Button>
             </Box>
           </Stack>
           <Stack marginTop={10} direction="row" spacing={5}>
@@ -74,7 +74,7 @@ export default function WhyEnvase() {
               <Text fontSize="1xl">
                 Run fullstack apps like <strong>Hasura, Wordpress, Joomla</strong> with ease and confidence. Envase creates and connects multiple containers over a common network without you ever having to think about it.
               </Text>
-              <Button onClick={() => window.open(demos.fullstack)} size="sm" variant="link" marginTop={2}>View Demo</Button>
+              <Button onClick={() => window.open(demos.fullstack)} size="sm" variant="link" marginTop={2}>Read More</Button>
             </Box>
           </Stack>
           <Stack marginTop={10} direction="row" spacing={5}>
