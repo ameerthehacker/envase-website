@@ -11,6 +11,7 @@ import ES from './es.svg';
 import Redis from './redis.svg';
 import MySQL from './mysql.svg';
 import Hasura from './hasura.svg';
+import { logEvent } from '../../utils/analytics';
 
 const LogoSVG = Logo as any;
 const GoSVG = Go as any;
@@ -124,6 +125,7 @@ export default function Hero({
             <Button
               leftIcon={getPlatformIcon(platform)}
               onClick={() => {
+                logEvent('DOWNLOAD', 'CLICK', platform);
                 window.open(downloadLink);
               }}
               marginTop={[5, 5, 8, 8]}
@@ -149,6 +151,9 @@ export default function Hero({
                 px={20}
                 py={[3, 3, 8, 8]}
                 ml={3}
+                onClick={() => {
+                  logEvent('READ_MORE', 'CLICK');
+                }}
               >
                 Read More
               </Button>
@@ -181,6 +186,9 @@ export default function Hero({
               <a tabIndex={-1} target="blank" href={`https://github.com/${GITHUB_REPO}/tree/master/src/formulas`}>
                 <Button
                   mt={[5, 5, 0, 0]}
+                  onClick={() => {
+                    logEvent('KNOW_MORE', 'VIEW_ALL_FORMULA');
+                  }}
                   rightIcon={FaArrowRight}
                   variant="link">
                   View all
